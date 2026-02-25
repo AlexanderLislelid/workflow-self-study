@@ -7,5 +7,14 @@
   </head>
   <body>
     <h1>Self study testfile</h1>
+    <div id="res"></div>
+    <script type="module">
+      async function fetchData() {
+        try {
+          console.log(await fetch(import.meta.env.VITE_API_URL));
+        } catch {}
+      }
+      fetchData();
+    </script>
   </body>
 </html>
