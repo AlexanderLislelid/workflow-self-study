@@ -4,17 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="module" crossorigin src="/assets/index-b349U7yc.js"></script>
   </head>
   <body>
     <h1>Self study testfile</h1>
     <div id="res"></div>
-    <script type="module">
-      async function fetchData() {
-        try {
-          console.log(await fetch(import.meta.env.VITE_API_URL));
-        } catch {}
-      }
-      fetchData();
-    </script>
   </body>
 </html>
